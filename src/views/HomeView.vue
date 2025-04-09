@@ -1,9 +1,8 @@
 <script setup>
-import HomePage from '../components/HomePage.vue'
 </script>
 
 <template>
   <main>
-    <HomePage />
+    test.
   </main>
 </template>

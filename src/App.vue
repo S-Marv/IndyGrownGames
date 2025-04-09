@@ -1,15 +1,17 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import MenuBar from './components/menuBar/MenuBar.vue';
 </script>
 
 <template>
-    <div class="wrapper">
+    <MenuBar></MenuBar>
+    <!-- <div class="wrapper">
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
-    </div>
+    </div> -->
   <RouterView />
 </template>
 
