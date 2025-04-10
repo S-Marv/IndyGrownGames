@@ -56,4 +56,8 @@ defineProps({
 	align-items: flex-end;
 	justify-content: space-between;
 }
+
+.icon{
+	padding: 0px 5px;
+}
 </style>

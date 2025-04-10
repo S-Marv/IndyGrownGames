@@ -24,7 +24,7 @@ const groups = ref([
 <template>
   <main>
     <Group v-for="(item, index) in groups" :title="item.title" :img-on-left="index%2==0" :imageUrl="item.imageUrl" :icons="item.icons">
-      <p>{{ item.text }}</p>
+      {{ item.text }}
     </Group>
   </main>
 </template>
