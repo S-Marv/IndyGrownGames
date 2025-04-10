@@ -18,8 +18,8 @@ defineProps({
 			<div class="group-text" :style="imgOnLeft? 'order:1;' : 'order:-1; text-align:right; '">
 				<div class="flex-container title-container" :style="imgOnLeft? '': 'flex-direction: row-reverse;'">
 					<h1>{{title}}</h1>
-					<div v-if="icons" style="margin-inline: 1em;">	
-						<a class="icon" v-for="icon in icons" :href="icon.link" >
+					<div v-if="icons" style="margin-inline: .5em;">	
+						<a v-for="icon in icons" :href="icon.link">
 							<img  :src="icon.imageURL" width="30px" :alt="icon.link"/>
 						</a>
 					</div>
@@ -55,9 +55,5 @@ defineProps({
 .title-container{
 	align-items: flex-end;
 	justify-content: space-between;
-}
-
-.icon{
-	padding: 0px 5px;
 }
 </style>
