@@ -1,5 +1,4 @@
 <script setup>
-import { Icon } from '@/objects/icon';
 import { Card, Image, Panel } from 'primevue';
 
 defineProps({

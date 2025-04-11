@@ -1,6 +1,7 @@
 <script setup>
+import Galleria from '@/components/galleria/galleria.vue';
 import Group from '@/components/groups/Group.vue';
-import { Icon } from '@/objects/icon';
+import { Icon } from '@/objects/Icon';
 import { ref } from 'vue';
 
 const groups = ref([
@@ -23,8 +24,10 @@ const groups = ref([
 
 <template>
   <main>
+    <Galleria/>
     <Group v-for="(item, index) in groups" :title="item.title" :img-on-left="index%2==0" :imageUrl="item.imageUrl" :icons="item.icons">
       {{ item.text }}
     </Group>
   </main>
 </template>
+

@@ -6,8 +6,10 @@ import { Button } from 'primevue';
 <template>
 <Menubar :model="[]">
     <template #start>
-        <img src="/menuBar/Icon.svg" width="50px" height="50px"/>
-		<img src="/menuBar/IndyGrownGames.svg" width="400"/>
+		<a href="/">
+			<img src="/menuBar/Icon.svg" width="50px" height="50px"/>
+			<img src="/menuBar/IndyGrownGames.svg" width="400"/>
+		</a>
     </template>
     <template #end>
         <Button>
