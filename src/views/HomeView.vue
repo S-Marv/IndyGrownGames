@@ -1,7 +1,9 @@
 <script setup>
+//import {Calendar} from '@/components/Calendar/Calendar.vue'
 import Group from '@/components/groups/Group.vue';
 import { Icon } from '@/objects/icon';
 import { ref } from 'vue';
+import Calendar from '@/components/Calendar/Calendar.vue';
 
 const groups = ref([
   {
@@ -26,5 +28,6 @@ const groups = ref([
     <Group v-for="(item, index) in groups" :title="item.title" :img-on-left="index%2==0" :imageUrl="item.imageUrl" :icons="item.icons">
       {{ item.text }}
     </Group>
+    <Calendar></Calendar>
   </main>
 </template>
