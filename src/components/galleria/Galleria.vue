@@ -17,10 +17,10 @@ import { ref } from "vue";
 import { Galleria } from "primevue";
 
 const images = ref([
-	"/galleria/IGDA Pic.png",
-	"/galleria/Indy Indies.png",
-	"/galleria/ITTC.png",
-	"/galleria/BIG Night.png",
+	"galleria/IGDA Pic.png",
+	"galleria/Indy Indies.png",
+	"galleria/ITTC.png",
+	"galleria/BIG Night.png",
 
 ]);
 const responsiveOptions = ref([
