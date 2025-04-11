@@ -1,6 +1,7 @@
 <template>
     <div class="box">
-        <Galleria :value="images" :responsiveOptions="responsiveOptions" :numVisible="4" :circular="true" containerStyle="max-width: 800px; min-width:800px"
+        <Galleria :value="images" :responsiveOptions="responsiveOptions" :numVisible="4" :circular="true" containerStyle="
+		max-width: 800px; min-width:800px; border-width: 0; border-radius:0;"
             :showItemNavigators="true" :showThumbnails="false">
             <template #item="slotProps">
                 <img :src="slotProps.item" style="height: 500px; display: block;" />
@@ -44,8 +45,6 @@ const responsiveOptions = ref([
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border-width: 100px;
-	border-radius: 1%;
-	border-color: red;
+
 }
 </style>
