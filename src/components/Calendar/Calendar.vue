@@ -5,7 +5,7 @@
           <div class="border border-surface-1000 dark:border-surface-1700 rounded m-2 p-4">
             <div class="mb-4">
               <div class="relative mx-auto">
-                <img :src="slotProps.data" class="w-full rounded" />
+                <img :src="slotProps.data" class="w-full rounded" width="350px"/>
               </div>
             </div>
           </div>
@@ -24,12 +24,12 @@
     data() {
       return {
         events: [
-          "/calendar/Indy Indies Night.png",
-          "/calendar/Indy Indies Night.png",
-          "/calendar/Indy Indies Night.png",
-          "/calendar/Indy Indies Night.png",
-          "/calendar/Indy Indies Night.png",
-          "/calendar/Indy Indies Night.png",
+          "calendar/Indy Indies Night.png",
+          "calendar/Indy Indies Night.png",
+          "calendar/Indy Indies Night.png",
+          "calendar/Indy Indies Night.png",
+          "calendar/Indy Indies Night.png",
+          "calendar/Indy Indies Night.png",
         ],
         responsiveOptions: [
           {
