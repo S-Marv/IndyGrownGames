@@ -5,7 +5,7 @@ import MenuBar from './components/menuBar/MenuBar.vue';
 </script>
 
 <template>
-    <MenuBar></MenuBar>
+    <MenuBar/>
     <!-- <div class="wrapper">
       <nav>
         <RouterLink to="/">Home</RouterLink>
