@@ -40,6 +40,8 @@ defineProps({
 
 .flex-panel {
   border-radius: 0;
+  border-left: 0px;
+  border-right: 0px;
 }
 
 .flex-container{
