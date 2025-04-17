@@ -1,12 +1,13 @@
 <script setup>
 import Menubar from 'primevue/menubar';
 import { Button } from 'primevue';
+const base = import.meta.env.BASE_URL;
 </script>
 
 <template>
 <Menubar :model="[]" class="gradiant">
     <template #start>
-		<a href="/">
+		<a :href="base">
 			<img src="/menuBar/Icon.svg" width="50px" height="50px"/>
 			<img src="/menuBar/IndyGrownGames.svg" width="400"/>
 		</a>
