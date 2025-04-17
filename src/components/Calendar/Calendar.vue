@@ -31,7 +31,7 @@
           {
           name: "Indy Indies Night",
           date: "June 7th, 1941",
-          text: "Insert random Bullshit",
+          text: "Insert random info",
           link: "https://www.facebook.com/thoseindyindies/",
           },
           {
