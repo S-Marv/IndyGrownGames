@@ -1,6 +1,5 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 import MenuBar from './components/menuBar/MenuBar.vue';
 </script>
 

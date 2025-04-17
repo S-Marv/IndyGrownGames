@@ -3,6 +3,27 @@ import HomeView from '../views/HomeView.vue'
 import PageNotFoundView from '@/views/PageNotFoundView.vue'
 
 
+const menubarRoutes = [
+  {
+    path: '/about',
+    name: 'about',
+    // route level code-splitting
+    // this generates a separate chunk (About.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import('../views/AboutView.vue'),
+  },
+  {
+    path: '/games',
+    name: 'games',
+    component: () => import('../views/GamesView.vue'),
+  },
+  {
+    path: '/education',
+    name: 'education',
+    component: () => import('../views/EducationView.vue'),
+  },
+]
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -11,24 +32,9 @@ const router = createRouter({
       name: 'home',
       component: HomeView,
     },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue'),
-    },
-    {
-      path: '/games',
-      name: 'games',
-      component: () => import('../views/GamesView.vue'),
-    },
-    {
-      path: '/education',
-      name: 'education',
-      component: () => import('../views/EducationView.vue'),
-    },
+    menubarRoutes[0],
+    menubarRoutes[1],
+    menubarRoutes[2],
     { 
       path: '/:pathMatch(.*)*', 
       name: "404",
@@ -36,4 +42,4 @@ const router = createRouter({
   ],
 })
 
-export default router
+export {router, menubarRoutes}
