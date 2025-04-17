@@ -26,6 +26,7 @@ const items = ref([
       {
         label: "Calendar",
         backgroundColor: "#f5ff6c",
+        route: "/",
       },
     ],
   },
@@ -38,7 +39,7 @@ const toggle = (event) => {
 
 <template>
   <div class="card flex justify-center">
-    <Button type="button" @click="toggle" aria-haspopup="true" aria-controls="overlay_menu">
+    <Button type="button" @click="toggle" aria-haspopup="true" aria-controls="overlay_menu" id="menu-button">
       <img src="/menuBar/DropDown.svg" width="40px" height="40px" />
     </Button>
 
