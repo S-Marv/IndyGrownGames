@@ -16,7 +16,7 @@ a,
 }
 
 .gradiant{
-	background-image: linear-gradient(to right, #67CCFF , #A98CEE, #FF39D7, #F5FF6C)
+	background-image: linear-gradient(to right, #67CCFF , #A98CEE, #FF39D7, #F5FF6C) !important
 }
 
 @media (hover: hover) {
