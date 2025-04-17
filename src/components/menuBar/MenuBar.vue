@@ -4,7 +4,7 @@ import { Button } from 'primevue';
 </script>
 
 <template>
-<Menubar :model="[]">
+<Menubar :model="[]" class="gradiant">
     <template #start>
 		<a href="/">
 			<img src="/menuBar/Icon.svg" width="50px" height="50px"/>
@@ -22,7 +22,6 @@ import { Button } from 'primevue';
 <style scoped>
 .p-menubar{
 	border-radius: 0;
-	background-image: linear-gradient(to right, #67CCFF , #A98CEE, #FF39D7, #F5FF6C)
 }
 
 Button{
