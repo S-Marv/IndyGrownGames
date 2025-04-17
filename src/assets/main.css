@@ -24,18 +24,6 @@ a,
   background-image: linear-gradient(to right, #67ccff, #a98cee, #ff39d7, #f5ff6c) !important;
 }
 
-#overlay_menu {
-  background-color: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  padding: 0 !important;
-  position: absolute !important;
-  right: 0 !important;
-  border: 1px solid rgb(159, 165, 170) !important;
-  height: 100% !important;
-  background-color: black !important;
-}
-
 @media (hover: hover) {
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);
