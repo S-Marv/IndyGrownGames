@@ -1,7 +1,6 @@
 <template> 
     <div class="carousel">
       <Carousel :value="events" :numVisible="3" :numScroll="1":responsiveOptions="responsiveOptions" >
-        <menuBar></menuBar>
         <template #item="slotProps">
           <Panel :header="slotProps.data.date">
                 <div class="title">
