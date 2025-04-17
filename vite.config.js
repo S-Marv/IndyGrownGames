@@ -6,7 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/HCI-Project2',
+  base: 'https://s-marv.github.io/HCI-Project2/',
   plugins: [
     vue(),
     vueDevTools(),
