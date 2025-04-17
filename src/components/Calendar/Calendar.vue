@@ -1,14 +1,17 @@
 <template> 
     <div class="carousel">
       <Carousel :value="events" :numVisible="3" :numScroll="1":responsiveOptions="responsiveOptions" >
+        <menuBar></menuBar>
         <template #item="slotProps">
-          <div class="border border-surface-1000 dark:border-surface-1700 rounded m-2 p-4">
-            <div class="mb-4">
-              <div class="relative mx-auto">
-                <img :src="slotProps.data" class="w-full rounded" width="350px"/>
-              </div>
-            </div>
-          </div>
+          <Panel :header="slotProps.data.date">
+                <div class="title">
+                <div class>{{ slotProps.data.name }}</div>
+                </div>
+                <div class="info">
+                  <div class>{{ slotProps.data.text }}</div>
+                  <a :href="slotProps.data.link" class="info">{{ slotProps.data.link }}</a> 
+                </div>
+          </Panel>
         </template>
       </Carousel>
     </div>
@@ -16,20 +19,34 @@
   
   <script>
   import  Carousel  from 'primevue/carousel'; 
+  import Panel from 'primevue/panel';
   
   export default {
     components: {
       Carousel,
+      Panel,
     },
     data() {
       return {
         events: [
-          "calendar/Indy Indies Night.png",
-          "calendar/Indy Indies Night.png",
-          "calendar/Indy Indies Night.png",
-          "calendar/Indy Indies Night.png",
-          "calendar/Indy Indies Night.png",
-          "calendar/Indy Indies Night.png",
+          {
+          name: "Indy Indies Night",
+          date: "June 7th, 1941",
+          text: "Insert random Bullshit",
+          link: "https://www.facebook.com/thoseindyindies/",
+          },
+          {
+          name: "Tabletop games",
+          date: "June 7th, 1941",
+          text: "we start a prototype on this day",
+          link: "https://indyttgc.org/",
+          },
+          {
+          name: "Tabletop games",
+          date: "June 7th, 1941",
+          text: "They maje table top games",
+          link: "https://www.facebook.com/thoseindyindies/",
+          }
         ],
         responsiveOptions: [
           {
@@ -52,3 +69,22 @@
     },
   };
   </script>
+
+  <style scoped>
+
+.info {
+  place-items: center;
+  font: 1em sans-serif;
+  margin-top: 30px;
+}
+
+.title{
+  place-items: center;
+  font: 3em sans-serif;
+}
+
+.p-panel{
+  margin: 10px
+}
+
+</style>
