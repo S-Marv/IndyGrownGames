@@ -14,9 +14,6 @@ import { Button } from "primevue";
     </template>
     <template #end>
       <NavMenu />
-      <!-- <Button>
-        <img src="/menuBar/DropDown.svg" width="40px" height="40px" />
-      </Button> -->
     </template>
   </Menubar>
 </template>
