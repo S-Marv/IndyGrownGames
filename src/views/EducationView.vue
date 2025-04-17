@@ -1,6 +1,12 @@
+<script setup>
+import Group from '@/components/groups/Group.vue';
+
+</script>
+
+
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+<Group title="Ball State University" img-on-left imageUrl="education/ballstate.jpg">
+BSU has a game design program.
+</Group>
 </template>
 
