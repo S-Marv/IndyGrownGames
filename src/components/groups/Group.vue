@@ -33,6 +33,12 @@ defineProps({
 </template>
 
 <style scoped>
+
+h1{
+	font-family: "Jersey", sans-serif;
+	font-weight:500;
+}
+
 .group-text{
 	width: 80%;
 	flex-grow: 4;
