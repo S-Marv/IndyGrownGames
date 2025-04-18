@@ -4,7 +4,7 @@
 		max-width: 800px; min-width:800px; border-width: 0; border-radius:0;"
             :showItemNavigators="true" :showThumbnails="false">
             <template #item="slotProps">
-                <img :src="slotProps.item" style="height: 600px; display: block;" />
+                <img :src="slotProps.item" style="height: 500px; display: block;" />
             </template>
 			<template #thumbnail="slotProps">
                 <img :src="slotProps.item" :alt="slotProps" style="display: block;" />

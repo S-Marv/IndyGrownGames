@@ -46,8 +46,12 @@ h1{
 
 .flex-panel {
   border-radius: 0;
+  border: solid thick;
   border-left: 0px;
   border-right: 0px;
+  border-top: 0px; 
+  margin-bottom: 20px; 
+  padding-bottom: 20px;
 }
 
 .flex-container{
@@ -62,4 +66,6 @@ h1{
 .title-container{
 	align-items: flex-end;
 }
+
+
 </style>
