@@ -5,6 +5,7 @@ import Group from '@/components/groups/Group.vue';
 import { Icon } from '@/objects/Icon';
 import { ref } from 'vue';
 import Calendar from '@/components/Calendar/Calendar.vue';
+import SectionHeader from '@/components/SectionHeader.vue';
 
 const groups = ref([
   {
@@ -27,6 +28,8 @@ const groups = ref([
 <template>
   <main>
     <Galleria/>
+    <SectionHeader title="Indiana Development Communities"
+      description="There are many game development communities throughout the state!"/>
     <Group v-for="(item, index) in groups" :title="item.title" :img-on-left="index%2==0" :imageUrl="item.imageUrl" :icons="item.icons">
       {{ item.text }}
     </Group>
@@ -34,3 +37,6 @@ const groups = ref([
   </main>
 </template>
 
+<style>
+
+</style>

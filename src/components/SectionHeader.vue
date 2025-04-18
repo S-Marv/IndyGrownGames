@@ -8,7 +8,7 @@ defineProps({
 <template>
 	<div class="title_page">
 		<div class="title">{{ title }}</div>
-      <div v-if="description">{{ description }}</div>
+    	<div class="description" v-if="description"><p>{{ description }}</p></div>
     </div>
 </template>
 
@@ -16,11 +16,15 @@ defineProps({
 
 .title_page{
   text-align: center;
-  font-family: "Jersey", sans-serif;
   margin: 10px;
+}
+
+.description{
+	font-size: 2em;
 }
 
 .title{
 	font-size: 4em;
+	font-family: "Jersey", sans-serif;
 }
 </style>

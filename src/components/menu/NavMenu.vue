@@ -56,6 +56,10 @@ const toggle = (event) => {
 </template>
 
 <style scoped>
+.p-button{
+  background-color: rgba(0, 0, 0, 0.462);
+}
+
 .menu-item-wrapper {
   padding: 0.5rem 1rem;
   cursor: pointer;
