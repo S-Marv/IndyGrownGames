@@ -1,7 +1,5 @@
 <template> 
-    <div class="title_page">
-      <div>Come and check out some events</div>
-    </div>
+    <SectionHeader title="Come and check out some events!"/>
     <div class="carousel">
       <Carousel :value="events" :numVisible="3" :numScroll="1":responsiveOptions="responsiveOptions" >
         <template #item="slotProps">
@@ -26,12 +24,14 @@
   import  Carousel  from 'primevue/carousel'; 
   import Panel from 'primevue/panel';
   import Card from 'primevue/card';
+  import SectionHeader from '../SectionHeader.vue';
   
   export default {
     components: {
       Carousel,
       Panel,
       Card,
+      SectionHeader,
     },
     data() {
       return {
@@ -104,18 +104,9 @@
   font-size: 3em;
 }
 
-.p-panel{
-  margin: 10px;
-}
 .p-card{
   margin: 10px;
-  border: 7px;
-}
-.title_page{
-  text-align: center;
-  font-family: "Jersey", sans-serif;
-  font-size: 4em;
-  margin: 10px;
+  border: thin solid;
 }
 
 </style>
