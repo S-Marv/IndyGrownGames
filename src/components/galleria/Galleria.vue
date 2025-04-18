@@ -40,11 +40,14 @@ const responsiveOptions = ref([
 ]);
 </script>
 
-<style scoped>
+<style>
 .box{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
 
+.p-galleria-nav-button{
+    background-color: rgba(0, 0, 0, 0.682) !important;
 }
 </style>

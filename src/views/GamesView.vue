@@ -1,12 +1,20 @@
 <script setup>
-import Group from '@/components/groups/Group.vue';
+import Cards from '@/components/cards/Cards.vue';
+import { CardData } from '@/components/cards/CardData';
+import { Icon } from '@/objects/Icon';
+import SectionHeader from '@/components/SectionHeader.vue';
+const terraria = new CardData("Terraria",
+		new Icon("games/Terraria.jpg", "https://terraria.org/"),
+		"Terraria's development team, Re-Logic, is based in Indiana.")
+
+const cards = [
+	terraria, terraria, terraria, terraria, terraria, terraria, terraria
+]
 
 </script>
 
 
 <template>
-<Group title="Terraria" img-on-left imageUrl="games/Terraria.jpg">
-Terraria's development team, Re-Logic, is based in Indiana.
-</Group>
+	<SectionHeader title="Games developed in IN" description="Here are some games made right here in Indiana!"/>
+	<Cards :cards="cards"/>
 </template>
-

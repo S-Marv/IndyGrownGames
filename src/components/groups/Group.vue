@@ -33,6 +33,12 @@ defineProps({
 </template>
 
 <style scoped>
+
+h1{
+	font-family: "Jersey", sans-serif;
+	font-weight:500;
+}
+
 .group-text{
 	width: 80%;
 	flex-grow: 4;
@@ -40,8 +46,12 @@ defineProps({
 
 .flex-panel {
   border-radius: 0;
+  border: solid thick;
   border-left: 0px;
   border-right: 0px;
+  border-top: 0px; 
+  margin-bottom: 20px; 
+  padding-bottom: 20px;
 }
 
 .flex-container{
@@ -56,4 +66,6 @@ defineProps({
 .title-container{
 	align-items: flex-end;
 }
+
+
 </style>
