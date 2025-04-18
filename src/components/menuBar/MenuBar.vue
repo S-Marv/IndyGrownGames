@@ -7,10 +7,10 @@ import { Button } from "primevue";
 <template>
   <Menubar :model="[]">
     <template #start>
-      <a href="/">
+      <router-link to="/">
         <img src="/menuBar/Icon.svg" width="50px" height="50px" />
         <img src="/menuBar/IndyGrownGames.svg" width="400" />
-      </a>
+      </router-link>
     </template>
     <template #end>
       <NavMenu />
