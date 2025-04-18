@@ -1,8 +1,13 @@
 <template> 
+    <div class="title_page">
+      <div>Come and check out some events</div>
+    </div>
     <div class="carousel">
       <Carousel :value="events" :numVisible="3" :numScroll="1":responsiveOptions="responsiveOptions" >
         <template #item="slotProps">
-          <Panel :header="slotProps.data.date">
+          <Card>
+            <template #header>
+              <div>{{ slotProps.data.date }}</div>
                 <div class="title">
                 <div class>{{ slotProps.data.name }}</div>
                 </div>
@@ -10,7 +15,8 @@
                   <div class>{{ slotProps.data.text }}</div>
                   <a :href="slotProps.data.link" class="info">{{ slotProps.data.link }}</a> 
                 </div>
-          </Panel>
+                </template>
+            </Card>
         </template>
       </Carousel>
     </div>
@@ -19,11 +25,13 @@
   <script>
   import  Carousel  from 'primevue/carousel'; 
   import Panel from 'primevue/panel';
+  import Card from 'primevue/card';
   
   export default {
     components: {
       Carousel,
       Panel,
+      Card,
     },
     data() {
       return {
@@ -31,7 +39,7 @@
           {
           name: "Indy Indies Night",
           date: "June 7th, 1941",
-          text: "Insert random info",
+          text: "Insert random info I am going to add random stuff again to see if it messes up centering",
           link: "https://www.facebook.com/thoseindyindies/",
           },
           {
@@ -84,18 +92,30 @@
   <style scoped>
 
 .info {
-  place-items: center;
-  font: 1em sans-serif;
+  text-align: center;
+  font-family: "Jersey", sans-serif;
+  font-size: 1em;
   margin-top: 30px;
 }
 
 .title{
-  place-items: center;
-  font: 3em sans-serif;
+  text-align: center;
+  font-family: "Jersey", sans-serif;
+  font-size: 3em;
 }
 
 .p-panel{
-  margin: 10px
+  margin: 10px;
+}
+.p-card{
+  margin: 10px;
+  border: 7px;
+}
+.title_page{
+  text-align: center;
+  font-family: "Jersey", sans-serif;
+  font-size: 4em;
+  margin: 10px;
 }
 
 </style>
