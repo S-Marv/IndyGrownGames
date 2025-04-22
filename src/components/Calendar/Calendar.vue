@@ -5,7 +5,7 @@
         <template #item="slotProps">
           <Card>
             <template #header>
-              <div>{{ slotProps.data.date }}</div>
+              <div style="padding-left: 1rem;">{{ slotProps.data.date }}</div>
                 <div class="title" id="Calendar">
                 <div class>{{ slotProps.data.name }}</div>
                 </div>
