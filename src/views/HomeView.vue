@@ -15,12 +15,23 @@ const groups = ref([
     icons:[new Icon("groups/discord.png", "https://discord.com/")]
   },
   {
+    title:"Indy Indies",
+    text: "Game development education and showcasing in the midwest",
+    imageUrl:"groups/IndyIndies.svg",
+    icons:[new Icon("groups/insta.png", "https://google.com")],
+  },
+  {
     title: "Indy Tabletop Game Creators",
     text: "Indy TableTop Game Creators is a group based out of central Indiana that helps game designers and playtesters create great tabletop games together. We’re largely both “Indy” (Indianapolis) and “indie” (independent), but anyone who wants to help and be helped is welcome. Beginners are welcome! Early hand-scribbled prototypes are encouraged!",
     imageUrl: "groups/IndyGameCreators.svg",
     icons:[new Icon("groups/discord.png", "https://discord.com/"), new Icon("groups/insta.png", "https://google.com")]
-
-  }
+  },
+  {
+    title:"BIG Night",
+    text: "BIG Night is a monthly gathering of independent game designers and players from all around central Indiana. Come and see what games are being made in your area or show off your own projects! Games of all types (mobile, PC, board, card, etc.) and levels of polish are welcome.",
+    imageUrl:"groups/BigNight.svg",
+    icons:[new Icon("groups/insta.png", "https://google.com")],
+  },
 ])
 
 </script>
