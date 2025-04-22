@@ -47,6 +47,7 @@ h1{
 .flex-panel {
   border-radius: 0;
   border: solid thick;
+  border-image: var(--gradient) 1;
   border-left: 0px;
   border-right: 0px;
   border-top: 0px; 

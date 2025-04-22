@@ -20,9 +20,14 @@ a,
   padding: 3px;
 }
 
-.gradiant{
-	background-image: linear-gradient(to right, #67CCFF , #A98CEE, #FF39D7, #F5FF6C) !important
+:root{
+  --gradient: linear-gradient(to right, #67CCFF , #A98CEE, #FF39D7, #F5FF6C)
 }
+
+.gradiant{
+	background-image: var(--gradient) !important
+}
+
 
 @media (hover: hover) {
   a:hover {
