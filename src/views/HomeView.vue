@@ -33,7 +33,7 @@ const groups = ref([
     <Group v-for="(item, index) in groups" :title="item.title" :img-on-left="index%2==0" :imageUrl="item.imageUrl" :icons="item.icons">
       {{ item.text }}
     </Group>
-    <Calendar></Calendar>
+    <div id="Calendar"><Calendar/></div>
   </main>
 </template>
 

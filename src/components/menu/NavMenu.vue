@@ -26,7 +26,7 @@ const items = ref([
       {
         label: "Calendar",
         backgroundColor: "#f5ff6c",
-        route: "/",
+        route: "/#Calendar",
       },
     ],
   },
