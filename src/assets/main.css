@@ -21,13 +21,16 @@ a,
 }
 
 :root{
-  --gradient: linear-gradient(to right, #67CCFF , #A98CEE, #FF39D7, #F5FF6C)
+  --app-yellow: #F5FF6C;
+  --app-magenta: #FF39D7;
+  --app-purple: #A98CEE;
+  --app-blue: #67CCFF;
+  --gradient: linear-gradient(to right,  var(--app-blue), var(--app-purple), var(--app-magenta), var(--app-yellow))
 }
 
 .gradiant{
 	background-image: var(--gradient) !important
 }
-
 
 @media (hover: hover) {
   a:hover {

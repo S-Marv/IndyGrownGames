@@ -9,23 +9,18 @@ const items = ref([
   {
     items: [
       {
-        label: "About",
-        backgroundColor: "#67ccff",
-        route: menubarRoutes[0].path,
-      },
-      {
         label: "EDU",
-        backgroundColor: "#a98cee",
-        route: menubarRoutes[2].path,
-      },
-      {
-        label: "Games",
-        backgroundColor: "#ff39d7",
+        backgroundColor: "#67ccff",
         route: menubarRoutes[1].path,
       },
       {
+        label: "Games",
+        backgroundColor: "#a98cee",
+        route: menubarRoutes[0].path,
+      },
+      {
         label: "Calendar",
-        backgroundColor: "#f5ff6c",
+        backgroundColor: "#ff39d7",
         route: "/#Calendar",
       },
     ],

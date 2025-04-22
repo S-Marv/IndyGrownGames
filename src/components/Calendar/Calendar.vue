@@ -96,6 +96,7 @@
   font-family: "Jersey", sans-serif;
   font-size: 1em;
   margin-top: 30px;
+  padding: 0px 1rem;
 }
 
 .title{
@@ -106,7 +107,7 @@
 
 .p-card{
   margin: 10px;
-  border: thin solid;
+  border: solid;
 }
 
 </style>

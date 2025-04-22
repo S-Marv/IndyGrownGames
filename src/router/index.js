@@ -5,14 +5,6 @@ import PageNotFoundView from '@/views/PageNotFoundView.vue'
 
 const menubarRoutes = [
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (About.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import('../views/AboutView.vue'),
-  },
-  {
     path: '/games',
     name: 'games',
     component: () => import('../views/GamesView.vue'),
@@ -34,7 +26,6 @@ const router = createRouter({
     },
     menubarRoutes[0],
     menubarRoutes[1],
-    menubarRoutes[2],
     { 
       path: '/:pathMatch(.*)*', 
       name: "404",
