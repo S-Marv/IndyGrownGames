@@ -6,6 +6,7 @@ defineProps({
 	title:String,
 	imageUrl: String,
 	icons: [Array, null],
+	hash: String,
 })
 </script>
 
@@ -13,7 +14,7 @@ defineProps({
 
 <template>
 	<Panel class="flex-panel">
-		<div class="flex-container">
+		<div class="flex-container" :id="hash">
 			<div class="group-text" :style="imgOnLeft? 'order:1;' : 'order:-1; text-align:right; '">
 				<div class="flex-container title-container" :style="imgOnLeft? '': 'flex-direction: row-reverse;'">
 					<h1>{{title}}</h1>

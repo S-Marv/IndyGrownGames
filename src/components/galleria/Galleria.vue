@@ -1,10 +1,12 @@
 <template>
     <div class="box">
-        <Galleria :value="images" :responsiveOptions="responsiveOptions" :numVisible="4" :circular="true" containerStyle="
+        <Galleria :value="groups" :responsiveOptions="responsiveOptions" :numVisible="4" :circular="true" containerStyle="
 		max-width: 800px; min-width:800px; border-width: 0; border-radius:0;"
             :showItemNavigators="true" :showThumbnails="false">
             <template #item="slotProps">
-                <img :src="slotProps.item" style="height: 500px; display: block;" />
+                <a :href="'#' + slotProps.item.hash">
+                <img :src="slotProps.item.galleriaImage" style="height: 500px; display: block;" />
+                </a>
             </template>
 			<template #thumbnail="slotProps">
                 <img :src="slotProps.item" :alt="slotProps" style="display: block;" />
@@ -16,14 +18,10 @@
 <script setup>
 import { ref } from "vue";
 import { Galleria } from "primevue";
-
-const images = ref([
-	"galleria/IGDA Pic.png",
-	"galleria/Indy Indies.png",
-	"galleria/ITTC.png",
-	"galleria/BIG Night.png",
-
-]);
+    
+defineProps({
+    groups: Array
+})
 const responsiveOptions = ref([
     {
         breakpoint: '991px',
