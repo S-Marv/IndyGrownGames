@@ -42,6 +42,8 @@ defineProps({
 	margin: 0px 10px 10px;
 	overflow: hidden;
 	border: medium solid;
+	border-image: var(--top-down-gradient) 1;
+
 }
 
 img{

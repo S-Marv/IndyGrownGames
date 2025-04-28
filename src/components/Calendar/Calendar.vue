@@ -108,6 +108,7 @@
 .p-card{
   margin: 10px;
   border: solid;
+  border-image: var(--top-down-gradient) 1;
 }
 
 </style>
